@@ -1,7 +1,7 @@
 // ในไฟล์ script.js:
 
 // *** แก้ไข: ต้องเพิ่ม /exec ต่อท้าย URL ***
-const BASE_API_URL = 'https://script.google.com/macros/s/AKfycbwe8zIcz3cmOudLd-vaSpPHPi18xaO4CaF8m8QNmc9_kDeDHxamPBBwHYSrWvYkXAIAA/exec'; 
+const BASE_API_URL = 'https://script.google.com/macros/s/AKfycbwe8Ztc3cmDuQLD-va6PIhPl18xaOo4CaF8m8QNmc9_KDeiDHxamP86nV5rWHyrXKAlAA/exec'; 
 //                                                                                                                    ^ เพิ่มส่วนนี้
 
 // แก้ไข: พารามิเตอร์ sheet ต้องเป็นตัวพิมพ์เล็ก 'availability' ตามโค้ด Apps Script
