@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการตารางสอนภายในองค์กร</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ตารางการสอนรวม - พฤศจิกายน 2025</h1>
+        <div class="nav-buttons">
+            <button id="prevMonth"> &lt; เดือนก่อนหน้า</button>
+            <span id="currentMonthYear">พฤศจิกายน 2025</span>
+            <button id="nextMonth">เดือนถัดไป &gt; </button>
+        </div>
+        <nav>
+            <a href="#" class="active">ตารางสอนรวม (Admin View)</a>
+            <a href="#" id="tutor-link">ลงความว่างติวเตอร์</a>
+            <a href="#" id="admin-link">จัดการตารางนักเรียน</a>
+        </nav>
+    </header>
+
+    <main>
+        <table id="scheduleTable">
+            <thead>
+                <tr id="dayHeaders">
+                    <th class="time-header">เวลา</th>
+                    </tr>
+            </thead>
+            <tbody id="scheduleBody">
+                </tbody>
+        </table>
+
+        <div id="summary">
+            <h2>สรุปชั่วโมงสอนรวมต่อเดือน</h2>
+            <div id="tutorSummary">
+                </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

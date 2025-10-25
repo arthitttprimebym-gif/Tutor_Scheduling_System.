@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+}
+
+/* --- ตารางหลัก --- */
+#scheduleTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#scheduleTable th, #scheduleTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    min-width: 100px; /* เพื่อให้คอลัมน์ไม่เล็กเกินไป */
+    height: 30px; /* ความสูงช่องเวลาครึ่งชั่วโมง */
+    font-size: 12px;
+}
+
+#scheduleTable thead th {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+.time-header {
+    background-color: #f8f9fa !important;
+    font-weight: bold;
+    min-width: 60px;
+}
+
+/* สไตล์สำหรับ Tutor แต่ละคน (คล้ายแถบสีในภาพ) */
+.tutor-Minnie { background-color: #f8c0c0; } /* สีชมพูอ่อน */
+.tutor-Leon { background-color: #c0f8c0; } /* สีเขียวอ่อน */
+.tutor-Mo { background-color: #c0c0f8; } /* สีฟ้าอ่อน */
+/* ... เพิ่มสีสำหรับ Mickey, Bell, Winny, Lin ... */
+
+/* สไตล์สำหรับช่องที่มีการสอน */
+.class-slot {
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+/* --- ส่วนสรุปชั่วโมง --- */
+#summary {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#tutorSummary div {
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
