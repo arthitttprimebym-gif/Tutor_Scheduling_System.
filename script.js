@@ -1,8 +1,11 @@
-// *** กรุณาแทนที่ด้วย URL ของ Web App ของคุณ *** ที่ได้จาก Apps Script
-const BASE_API_URL = 'https://script.google.com/macros/s/AKfycbwe8zIcz3cmOudLd-vaSpPHPi18xaO4CaF8m8QNmc9_kDeDHxamPBBwHYSrWvYkXAIAA/exec'; 
+// ในไฟล์ script.js:
 
-// URL สำหรับดึง Tutor Availability
-const AVAILABILITY_API_URL = `${BASE_API_URL}?sheet=availability`;
+// *** แก้ไข: ต้องมี /exec ต่อท้ายเสมอ ***
+const BASE_API_URL = 'https://script.google.com/macros/s/AKfycbwe8zIcz3cmOudLd-vaSpPHPi18xaO4CaF8m8QNmc9_kDeDHxamPBBwHYSrWvYkXAIAA/exec'; 
+//                                                                                                                        ^ เพิ่มส่วนนี้
+
+// URL สำหรับดึง Tutor Availability (sheet=availability ต้องเป็นตัวเล็กตามโค้ด doGet)
+const AVAILABILITY_API_URL = `${BASE_API_URL}?sheet=availability`; 
 
 // URL สำหรับดึง Student Schedule
 const STUDENT_SCHEDULE_API_URL = `${BASE_API_URL}?sheet=students`;
